@@ -1,0 +1,262 @@
+
+:root {
+    --primary: #000;
+    --secondary: #fff;
+    --terciary: rgb(255, 0, 68);
+    --quartiary: blue;
+    --quintiary: red;
+    --sextiary: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Code Pro';
+
+}
+
+html {
+    background-color: var(--primary);
+}
+
+
+/* TOPO */
+
+header {
+    width: 95vw;
+    height: 100px;
+}
+
+.max-width {
+    width: 90vw;
+    margin: auto;
+}
+
+.navbar {
+    width: 95vw;
+    background: var(--primary);
+    border: 5px solid var(--secondary);
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navigation ul li a {
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+    color: red;
+    border-bottom: 1px solid #ff0000;
+}
+
+/* BANNER */
+
+.header {
+    width: 95vw;
+    height: auto;
+}
+
+.top {
+    height: 80px;
+    width: 95vw;
+    background-color: var(--primary);
+    border: 5px solid var(--secondary);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    width: 85%;
+    color: var(--sextiary);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: var(--quintiary);
+}
+
+
+/* CONTENT */
+
+.content {
+    width: 95vw;
+    height: auto;
+}
+
+.main {
+    width: 95vw;
+
+    margin: 25px auto;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 5px solid var(--secondary);
+    border-radius: 30px;
+    padding: 35px 0 0 0;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.pessoa{
+    min-width:24%;
+    height: auto;
+    margin: 0 20px 35px 0;
+    padding: 20px 0;
+    background-color: var(--secondary);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    width: 90%;
+    height: 150px;
+    background-color: var(--primary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda-img {
+    width: 140px;
+    height: 140px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borda-img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.status {
+    width: 90%;
+    height: 240px;
+    background-color: var(--primary);
+    border-radius: 20px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--quintiary);
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    border: 3px solid var(--secondary);
+    transition: all 400ms ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button a {
+    color: #000;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    font-size: 19px;
+}
+
+
+@media screen and (max-device-width: 1100px){ /*68.75em */
+
+    .max-width {
+        width: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .main {
+        border: none;
+    }
+    
+    .pessoa{
+        width: 40%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-device-width: 780px){ /*48.75em*/
+    .max-width {
+        width: 600px;
+
+    }
+    
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .pessoa{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-device-width: 450px){ /*22.75em */
+
+    .max-width {
+        width: 320px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+
+    
+    .pessoa{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+}
